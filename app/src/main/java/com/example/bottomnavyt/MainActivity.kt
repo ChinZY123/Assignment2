@@ -13,28 +13,21 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        replaceFragment(Home())
+        replaceFragment(food_donation())
 
         binding.bottomNavigationView.setOnItemSelectedListener {
 
             when(it.itemId){
 
-                R.id.home -> replaceFragment(Home())
-                R.id.profile -> replaceFragment(Profile())
-                R.id.settings -> replaceFragment(Settings())
-
+                R.id.donation -> replaceFragment(food_donation())
+                R.id.request -> replaceFragment(food_request())
+                R.id.inventory -> replaceFragment(food_volunteer())
+                R.id.volunteer -> replaceFragment(food_inventory())
                 else ->{
-
-
-
                 }
-
             }
-
             true
-
         }
-
 
     }
 

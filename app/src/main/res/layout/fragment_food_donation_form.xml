@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".food_donation_form">
+
+    <!-- Header Section -->
+    <include
+        android:id="@+id/include"
+        layout="@layout/header"
+        tools:layout_editor_absoluteX="-32dp" />
+
+    <!-- Food Donation Detail Section -->
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/fooddonation"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"/>
+
+    <!-- Food Name -->
+    <TextView
+        android:id="@+id/foodname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="20dp"
+        android:padding="9dp"
+        android:text="Food Name"
+        android:textSize="20sp"/>
+
+    <!-- Food Name EditText -->
+    <EditText
+        android:id="@+id/foodnameEditText"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="8dp"
+        android:hint="Enter Food Name"
+        android:padding="9dp"/>
+
+    <!-- Food Description -->
+    <TextView
+        android:id="@+id/fooddesc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:padding="9dp"
+        android:text="Food Description"
+        android:textSize="20sp"/>
+
+    <!-- Food Description EditText -->
+    <EditText
+        android:id="@+id/descEditText"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="8dp"
+        android:hint="Enter Food Description"
+        android:padding="9dp"/>
+
+    <!-- Food Instruction -->
+    <TextView
+        android:id="@+id/instruction"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:padding="9dp"
+        android:text="Food Instruction"
+        android:textSize="20sp"/>
+
+    <!-- Food Instruction EditText -->
+    <EditText
+        android:id="@+id/instructionEditText"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="8dp"
+        android:hint="Enter Food Instruction"
+        android:padding="9dp"/>
+
+    <!-- Quantity EditText -->
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="Quantity"
+        android:inputType="text"/>
+
+    <!-- Image -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="89dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <!-- Upload Image Button -->
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:text="Upload Image"/>
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Submit"/>
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Back"/>
+
+</FrameLayout>
